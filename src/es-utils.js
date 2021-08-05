@@ -94,7 +94,7 @@ function _manageBooleanFilter(nestedPath, subType, booleanFilter) {
           not: childFilter.not.has_parent.filter
         };
       } else {
-        return _innerHitsFilter(nestedPath, childFilter);
+        return _innerHitsFilter(nestedPath, subType, childFilter);
       }
     });
 }
